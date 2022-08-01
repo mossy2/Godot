@@ -9,15 +9,18 @@ func _ready():
 	center = get_viewport_rect().size/2
 
 func _process(delta):
-	if Input.is_action_just_pressed("zoomed"):
+	if Input.is_action_just_pressed("zoom"):
 		if zoomed:
-			target = center
+			target = null
 			zoomed = false
 		else:
-			target = owner.get_node("Player").gloal_position
+			target = owner.get_node("Player")
 			zoomed = true
 
 	if zoomed:
-		zoom = zoom.move_toward(target, .03)
-		position = position.move_toward(target,80)
+		zoom = zoom.move_toward(Vector2(0.3,0.3), 0.03)
+		position = position.move_toward(target.global_position,80)
 		
+	else:
+		zoom = zoom.move_toward(Vector2(1,1),0.03)
+		position = position.move_toward(center,80)
