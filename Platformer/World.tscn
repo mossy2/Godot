@@ -543,6 +543,9 @@ position = Vector2( 524, 428 )
 
 [node name="Button" parent="DoorAndButton" index="0"]
 position = Vector2( 28, -222 )
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Door" parent="DoorAndButton" index="1"]
 position = Vector2( 94, -244 )
