@@ -45,7 +45,7 @@ tracks/0/keys = {
 
 [sub_resource type="Curve2D" id=21]
 _data = {
-"points": PoolVector2Array( 0, 0, 0, 0, -21, 1, 0, 0, 0, 0, 380, 1, 0, 0, 0, 0, -21, 2 )
+"points": PoolVector2Array( 0, 0, 0, 0, -21, 1, 0, 0, 0, 0, 4, -1, 0, 0, 0, 0, 180, -2, 0, 0, 0, 0, 380, 1, 0, 0, 0, 0, 177, -1, 0, 0, 0, 0, 51, 2, 0, 0, 0, 0, -21, -3 )
 }
 
 [sub_resource type="CircleShape2D" id=2]
@@ -589,14 +589,17 @@ curve = SubResource( 21 )
 
 [node name="PathFollow2D" type="PathFollow2D" parent="SpinningBlade2/Path2D"]
 position = Vector2( -21, 1 )
+rotation = -0.141897
 
 [node name="Sprite" type="Sprite" parent="SpinningBlade2/Path2D/PathFollow2D"]
+position = Vector2( 0.424316, -2.96985 )
 texture = ExtResource( 9 )
 hframes = 8
 
 [node name="Area2D" type="Area2D" parent="SpinningBlade2/Path2D/PathFollow2D/Sprite"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="SpinningBlade2/Path2D/PathFollow2D/Sprite/Area2D"]
+position = Vector2( 0, 3.05176e-05 )
 shape = SubResource( 2 )
 
 [node name="SpinningBlade3" parent="." instance=ExtResource( 7 )]
@@ -637,6 +640,8 @@ position = Vector2( 686, 246 )
 
 [node name="SavePoint" parent="SavePoint2" instance=ExtResource( 10 )]
 position = Vector2( 491, 48 )
+
+[connection signal="body_entered" from="SpinningBlade2/Path2D/PathFollow2D/Sprite/Area2D" to="Player" method="_on_Area2D_body_entered"]
 
 [editable path="SpinningBlade3"]
 [editable path="DoorAndButton"]
