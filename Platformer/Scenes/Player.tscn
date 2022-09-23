@@ -3,8 +3,8 @@
 [ext_resource path="res://Sprites/herochar_spritesheet(new).png" type="Texture" id=1]
 [ext_resource path="res://Scenes/Player.gd" type="Script" id=2]
 
-[sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 5, 7 )
+[sub_resource type="RectangleShape2D" id=10]
+extents = Vector2( 7.27059, 6.90992 )
 
 [sub_resource type="Animation" id=2]
 length = 0.001
@@ -149,8 +149,10 @@ vframes = 15
 frame = 40
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( -1, 1 )
-shape = SubResource( 1 )
+position = Vector2( -0.5, 0.5 )
+rotation = -3.14159
+scale = Vector2( 0.618932, 0.940676 )
+shape = SubResource( 10 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/RESET = SubResource( 2 )
