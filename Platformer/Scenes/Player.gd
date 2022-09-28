@@ -80,3 +80,8 @@ func _physics_process(delta):
 
 func _on_Area2D_body_entered(body):
 	pass # Replace with function body.
+
+
+func _on_DeathZone_area_entered(area):
+	if area.is_in_group("Deadly"):
+		if GameStats.check_reset()

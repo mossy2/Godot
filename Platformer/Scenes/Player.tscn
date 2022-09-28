@@ -3,11 +3,9 @@
 [ext_resource path="res://Sprites/herochar_spritesheet(new).png" type="Texture" id=1]
 [ext_resource path="res://Scenes/Player.gd" type="Script" id=2]
 
-[sub_resource type="RectangleShape2D" id=10]
-extents = Vector2( 7.27059, 6.90992 )
-
 [sub_resource type="Animation" id=2]
 length = 0.001
+loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:frame")
 tracks/0/interp = 1
@@ -139,8 +137,18 @@ tracks/0/keys = {
 "values": [ 8, 9, 10, 11, 12 ]
 }
 
+[sub_resource type="CapsuleShape2D" id=10]
+radius = 4.0
+height = 4.0
+
 [node name="Player" type="KinematicBody2D" groups=["Player"]]
 script = ExtResource( 2 )
+speed = null
+jump_speed = null
+gravity = null
+slide_speed = null
+friction = null
+acceleration = null
 
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 1 )
@@ -148,11 +156,11 @@ hframes = 8
 vframes = 15
 frame = 40
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionPolygon2D" parent="."]
 position = Vector2( -0.5, 0.5 )
 rotation = -3.14159
 scale = Vector2( 0.618932, 0.940676 )
-shape = SubResource( 10 )
+polygon = PoolVector2Array( -5.65493, -6.90991, -4.03925, -7.97298, 5.65487, -7.973, 7.27056, -6.90994, 7.2706, 2.65765, 4.03924, 5.84685, -2.42351, 5.84686, -5.65489, 2.7242 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/RESET = SubResource( 2 )
@@ -163,3 +171,11 @@ anims/jump = SubResource( 6 )
 anims/pushing = SubResource( 7 )
 anims/roll = SubResource( 9 )
 anims/running = SubResource( 4 )
+
+[node name="DeathZone" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DeathZone"]
+position = Vector2( -1, 1 )
+shape = SubResource( 10 )
+
+[connection signal="area_entered" from="DeathZone" to="." method="_on_DeathZone_area_entered"]
