@@ -692,6 +692,26 @@ position = Vector2( 536, 677 )
 position = Vector2( 1058, 459 )
 rotation = 3.14159
 
+[node name="SpikeTrap34" parent="." instance=ExtResource( 5 )]
+position = Vector2( 817, 229 )
+
+[node name="SpikeTrap45" parent="." instance=ExtResource( 5 )]
+position = Vector2( 944, 229 )
+
+[node name="SpikeTrap47" parent="." instance=ExtResource( 5 )]
+position = Vector2( 448, 363 )
+rotation = -3.14159
+
+[node name="SpikeTrap46" parent="." instance=ExtResource( 5 )]
+position = Vector2( 432, 363 )
+rotation = -3.14159
+
+[node name="SpikeTrap48" parent="." instance=ExtResource( 5 )]
+position = Vector2( 388, 341 )
+
+[node name="SpikeTrap49" parent="." instance=ExtResource( 5 )]
+position = Vector2( 404, 341 )
+
 [node name="SpinningBlade" parent="." instance=ExtResource( 7 )]
 position = Vector2( 340, 413 )
 
