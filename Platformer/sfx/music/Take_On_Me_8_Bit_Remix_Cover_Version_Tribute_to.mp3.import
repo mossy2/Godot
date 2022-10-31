@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Take_On_Me_8_Bit_Remix_Cover_Version_Tribute_to.mp3-98b51f5b95f00a24bfb720762f630843.mp3str"
+
+[deps]
+
+source_file="res://sfx/music/Take_On_Me_8_Bit_Remix_Cover_Version_Tribute_to.mp3"
+dest_files=[ "res://.import/Take_On_Me_8_Bit_Remix_Cover_Version_Tribute_to.mp3-98b51f5b95f00a24bfb720762f630843.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
