@@ -11,5 +11,5 @@ dest_files=[ "res://.import/8-bit-video-game-death-sound-effect.mp3-9f8cb472ca2e
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0

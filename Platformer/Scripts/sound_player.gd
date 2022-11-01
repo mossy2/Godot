@@ -17,8 +17,8 @@ var sound_effects = {
 
 
 
-var music_db = 1
-var sound_db = 1
+var music_db = 100
+var sound_db = 100
 
 func change_music_db(val):
 	music_db = linear2db(val)

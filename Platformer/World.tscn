@@ -11,7 +11,7 @@
 [ext_resource path="res://bigflowers_props.png" type="Texture" id=9]
 [ext_resource path="res://Scenes/SavePoint.tscn" type="PackedScene" id=10]
 [ext_resource path="res://World.gd" type="Script" id=11]
-[ext_resource path="res://becdd8955dc57eb.png" type="Texture" id=12]
+[ext_resource path="res://Background.PNG" type="Texture" id=12]
 [ext_resource path="res://grass_props.png" type="Texture" id=13]
 [ext_resource path="res://Scenes/nature-paltformer-tileset-16x16.png" type="Texture" id=14]
 
@@ -360,8 +360,9 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 [node name="World" type="Node2D"]
 script = ExtResource( 11 )
 
-[node name="Becdd8955Dc57Eb" type="Sprite" parent="."]
-position = Vector2( 746, 590 )
+[node name="Background" type="Sprite" parent="."]
+position = Vector2( 647.5, 443 )
+scale = Vector2( 2.32814, 2.51801 )
 texture = ExtResource( 12 )
 
 [node name="BigflowersProps5" type="Sprite" parent="."]
