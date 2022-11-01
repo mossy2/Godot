@@ -10,6 +10,7 @@ var music_tracks = {
 var sound_effects = {
 	"jump":"res://sfx/mixkit-player-jumping-in-a-video-game-2043.wav",
 	"dead":"res://sfx/8-bit-video-game-death-sound-effect.mp3",
+	"checkpoint":"res://sfx/positive.ogg",
 }
 
 
