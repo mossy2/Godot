@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/mario-coin-200bpm-82548.mp3-a83b1d803580945fa3eb35e3181e9735.mp3str"
+
+[deps]
+
+source_file="res://sfx/mario-coin-200bpm-82548.mp3"
+dest_files=[ "res://.import/mario-coin-200bpm-82548.mp3-a83b1d803580945fa3eb35e3181e9735.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
