@@ -4,7 +4,7 @@
 [ext_resource path="res://Sprites/buttom.png" type="Texture" id=2]
 [ext_resource path="res://Sprites/strange_door_opening_anim_strip_14.png" type="Texture" id=3]
 [ext_resource path="res://Sprites/buttom_pressed.png" type="Texture" id=4]
-[ext_resource path="res://Scenes/DoorAndButton.gd" type="Script" id=5]
+[ext_resource path="res://Scripts/DoorAndButton.gd" type="Script" id=5]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 8, 1 )

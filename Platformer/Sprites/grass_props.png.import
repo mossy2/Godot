@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/nature-paltformer-tileset-16x16.png-c72f8e67cd3e4dad498c62b1808d7d50.stex"
+path="res://.import/grass_props.png-ee1bd48f5604aba6230c37a090c16384.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Scenes/nature-paltformer-tileset-16x16.png"
-dest_files=[ "res://.import/nature-paltformer-tileset-16x16.png-c72f8e67cd3e4dad498c62b1808d7d50.stex" ]
+source_file="res://Sprites/grass_props.png"
+dest_files=[ "res://.import/grass_props.png-ee1bd48f5604aba6230c37a090c16384.stex" ]
 
 [params]
 

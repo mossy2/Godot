@@ -2,18 +2,19 @@
 
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Sprites/tileset.png" type="Texture" id=2]
-[ext_resource path="res://Camera2D.gd" type="Script" id=3]
+[ext_resource path="res://Scripts/Camera2D.gd" type="Script" id=3]
 [ext_resource path="res://Scenes/SwingingTrap.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Scenes/SpikeTrap.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Scenes/DoorAndButton.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Scenes/SpinningBlade.tscn" type="PackedScene" id=7]
-[ext_resource path="res://flowers_props.png" type="Texture" id=8]
-[ext_resource path="res://bigflowers_props.png" type="Texture" id=9]
+[ext_resource path="res://Sprites/flowers_props.png" type="Texture" id=8]
+[ext_resource path="res://Sprites/bigflowers_props.png" type="Texture" id=9]
 [ext_resource path="res://Scenes/SavePoint.tscn" type="PackedScene" id=10]
-[ext_resource path="res://World.gd" type="Script" id=11]
-[ext_resource path="res://Background.PNG" type="Texture" id=12]
-[ext_resource path="res://grass_props.png" type="Texture" id=13]
-[ext_resource path="res://Scenes/nature-paltformer-tileset-16x16.png" type="Texture" id=14]
+[ext_resource path="res://Scripts/World.gd" type="Script" id=11]
+[ext_resource path="res://Sprites/Background.PNG" type="Texture" id=12]
+[ext_resource path="res://Sprites/grass_props.png" type="Texture" id=13]
+[ext_resource path="res://Sprites/nature-paltformer-tileset-16x16.png" type="Texture" id=14]
+
 
 [sub_resource type="Animation" id=3]
 length = 0.001

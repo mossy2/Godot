@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Background.PNG-db4ecdd64627f6a125fcac4af777a147.stex"
+path="res://.import/bigflowers_props.png-a5c52c3051a99ac3e0351dadaa518410.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Background.PNG"
-dest_files=[ "res://.import/Background.PNG-db4ecdd64627f6a125fcac4af777a147.stex" ]
+source_file="res://Sprites/bigflowers_props.png"
+dest_files=[ "res://.import/bigflowers_props.png-a5c52c3051a99ac3e0351dadaa518410.stex" ]
 
 [params]
 
